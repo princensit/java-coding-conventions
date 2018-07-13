@@ -148,6 +148,11 @@ private String getFirstWord() {
 }
 ```
 34. When writing multi-line comments, use the /* ... */ style if you want automatic code formatters to re-wrap the lines when necessary (paragraph-style). Most formatters don't re-wrap lines in // ... style comment blocks.
+35. Always add TODO for future developments. Ex-
+```java
+// TODO <3-letters-name-initials> <yyyymmdd> <comment>
+// TODO PRI 20180713 introduce caching to reduce latency
+```
 
 ### Ordering of class contents
 1. Any declared logger as "private static final Logger logger = Logger.getLogger(MyClass.getName());" or better use @Slf4j lombok annotation.
