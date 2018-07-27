@@ -1,0 +1,71 @@
+The purpose of this is to minimize the amount of extraneous diffs that show up when making changes to the existing codebase.
+
+# Eclipse IDE:
+Code can be formatted by (CTRL-SHIFT-F). Imports can be organized by (CTRL-SHIFT-O).
+
+## Installation Steps:
+* Import code formatter:
+** Open "Window->Preferences"
+** Select "Java->Code Style->Formatter"
+** Click "Import..."
+** Browse to eclipse-java-freecharge-style.xml
+** Click "Open" and "OK"
+* Import "Organize Import" order:
+** Open "Window->Preferences"
+** Select "Java->Code Style->Organize Imports"
+** Click "Import..."
+** Browse to org.eclipse.jdt.ui.prefs
+** Click "Open" and "OK"
+* Configure "Save Actions":
+** Open "Window->Preferences"
+** Select "Java->Editor->Save Actions"
+** Check "Perform the selected actions on save"
+** Uncheck "Format source code"
+** Uncheck "Organize imports"
+** Check "Additional actions"
+** Click "Configure..."
+** Under "Code Organizing->Formatter", check "Remove trailing whitespace" and select "All lines"
+** Uncheck all other "Save actions"
+** Click "OK"
+** "Additional Actions" should only show one bullet "Remove trailing white space on all lines"
+** Click "OK"
+
+# Intellij IDEA IDE (Preferable IDE):
+
+## Installation Steps:
+* Install Plugin:
+** Settings (CTRL-ALT-S)
+** Under IDE Settings, select "Plugins"
+** Select the Available Tab
+** Type "Eclipse" in the search bar
+** Right-Click on Eclipse Code Formatter and choose "Download and Install"
+** Select OK and restart IDEA
+* Configure Plugin:
+** Settings (CTRL-ALT-S)
+** Under Project Settings, select "Eclipse Code Formatter"
+** Select "Use the Eclipse Formatter"
+** Check the box for "Enable Java"
+** Uncheck the box for "Enable JavaScript"
+** For "Eclipse Java Formatter config file", browse to eclipse-java-freecharge-style.xml
+** Check the box for "Optimize Imports"
+** For "Import Order", select "From File" and browse to org.eclipse.jdt.ui.prefs
+** Select "Do not format other file types by IntelliJ formatter"
+** Click OK.
+* Disable the built-in import cleanups
+** Settings (CTRL-ALT-S)
+** Under Project Settings, select "Code Style", "Java", then "Imports"
+** Change "Class count to use import with '*'" to 99
+** Change "Names count to use static import with '*'" to 99
+* Configure Editor
+** Settings (CTRL-ALT-S)
+** Under "IDE Settings", select "Editor"
+** Check the box for "Enable in place Refactorings"
+** For "Strip trailing spaces on Save", select "All"
+** Under "IDE Settings/Editor", select "Auto Import"
+** Uncheck the box for "Optimize imports on the fly"
+** Under "IDE Settings/Editor", select "Appearance"
+** Check the box for "Show line numbers" and method separators". See snapshot.
+** Under "IDE Settings/Editor", select "Code Style"
+** Check the box for "Enable formatter markers in comments". See snapshot.
+* Configure Appearance & Behaviour
+** Check the box for "Show memory indicator"
