@@ -140,7 +140,7 @@ In this case, it is always better to specify type instead of using @SuppressWarn
 30. Don't log password in log files.
 31. Use @JsonIgnore annotation on variables, whenever necessary.
 32. Each switch statement includes a default statement group, even if it contains no code. Exception: A switch statement for an enum type may omit the default statement group, if it includes explicit cases covering all possible values of that type. This enables IDEs or other static analysis tools to issue a warning if any cases were missed.
-33. Commenting done using double slash (//) should be above the code instead of inline. Ex-
+33. Commenting done using double slash (//) should be above the code instead of inline. Generally, a comment should explain why you're doing something in a certain way, not what the code does. Most of the time the code can be made more clear and readable instead of adding a comment, by using good names and extracting methods. Ex-
 ```java
 private String getFirstWord() { 
     // comment here
